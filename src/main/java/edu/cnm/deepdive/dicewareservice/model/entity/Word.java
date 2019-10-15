@@ -9,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.lang.NonNull;
 
 @Entity
@@ -29,7 +27,6 @@ public class Word {
   @NonNull
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "passphrase_id", nullable = false, updatable = false)
-  @OnDelete(action = OnDeleteAction.CASCADE)
   private Passphrase passphrase;
 
   public Long getId() {
