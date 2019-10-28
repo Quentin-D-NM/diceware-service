@@ -6,7 +6,6 @@ import edu.cnm.deepdive.dicewareservice.model.entity.Word;
 import edu.cnm.deepdive.dicewareservice.service.PassphraseGenerator;
 import java.util.List;
 import java.util.NoSuchElementException;
-import javax.xml.ws.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.ExposesResourceFor;
 import org.springframework.http.HttpStatus;
